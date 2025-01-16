@@ -31,7 +31,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Attended class Tuesday
 	+ Attended class Thursday
 	+ I met Mikaela Thursday 
-	+ Total 2 points
+	+ Total 3 points
 - Week 3
 - Week 4
 - Week 5

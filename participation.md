@@ -38,6 +38,10 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Asked a question on Discord
 	+ total 3 points
 - Week 4
+	+ Attended class Tuesday
+	+ Attended class Thursday
+	+ Assessed for Unit 0
+	+ Total 3 points
 - Week 5
 - Week 6
 - Week 7

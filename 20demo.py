@@ -10,7 +10,7 @@ def midpoint(x1, y1, x2, y2):
 print(midpoint(1, 2, 3, 4))
 m = midpoint(1, 2, 3, 4)
 mx, my = midpoint(1, 2, 3, 4)
-print(mx, my) #call for individule values 
+print(mx, my) #call for individule values (known results will have 2 values )
 
 ###########
 i = 0
@@ -78,11 +78,89 @@ def nilakantha(limit):
         else:          pi = pi + 4 / d
     return pi
     
-########3
+########
 import random
     for i in range(3): #3 times
     print(random.randint(1, 6)) #randnum bw 1-6
     
 random.seed(1) #set seed
+print(random.random())
+print(random.random())
 
 # += increment -=decrement *=multiply 
+###########
+import time
+
+def estimate_pi():
+    pi_estimate = 0
+    denominator = 1
+    sign = 1  # Alternates between +1 and -1
+    iterations = 0
+
+    while True:  # Infinite loop
+        pi_estimate += sign * (1 / denominator)
+        denominator += 2
+        sign *= -1  # Flip sign for next term
+        iterations += 1
+
+        print(f"Iteration {iterations}: π ≈ {pi_estimate * 4}")
+        time.sleep(0.1)  # Small delay for readability
+
+estimate_pi()
+#########
+import random
+import time
+
+def estimate_pi():
+    inside_circle = 0
+    total_points = 0
+
+    while True:  # Infinite loop
+        x = random.uniform(0, 1)  # Random x between 0 and 1
+        y = random.uniform(0, 1)  # Random y between 0 and 1
+        distance = x**2 + y**2  # Squared distance from origin
+
+        if distance <= 1:
+            inside_circle += 1  # Point is inside the quarter circle
+        
+        total_points += 1
+        pi_estimate = (inside_circle / total_points) * 4  # Estimate π
+
+        print(f"Iteration {total_points}: π ≈ {pi_estimate}")
+        time.sleep(0.1)  # Small delay for readability
+
+try:
+    estimate_pi()
+except KeyboardInterrupt:
+    print("\nProgram stopped by user.")
+#####
+import random
+
+def roll_3d6():
+    """Roll 3 six-sided dice."""
+    return sum(random.randint(1, 6) for _ in range(3))
+
+def roll_3d6r1():
+    """Roll 3 six-sided dice, but re-roll any 1s."""
+    return sum(random.randint(2, 6) if x == 1 else x for x in [random.randint(1, 6) for _ in range(3)])
+
+def roll_3d6x2():
+    """Roll pairs of six-sided dice 3 times, taking the maximum of each pair."""
+    return sum(max(random.randint(1, 6), random.randint(1, 6)) for _ in range(3))
+
+def roll_4d6d1():
+    """Roll 4 six-sided dice, dropping the lowest die roll."""
+    rolls = [random.randint(1, 6) for _ in range(4)]
+    return sum(sorted(rolls)[1:])  # Drop the lowest roll
+
+def average_stat(roll_function, trials=100000):
+    """Calculate the average stat value over many trials."""
+    return sum(roll_function() for _ in range(trials)) / trials
+
+# Run simulations
+trials = 100000
+print(f"Average stat for 3D6:    {average_stat(roll_3d6, trials):.2f}")
+print(f"Average stat for 3D6r1:  {average_stat(roll_3d6r1, trials):.2f}")
+print(f"Average stat for 3D6x2:  {average_stat(roll_3d6x2, trials):.2f}")
+print(f"Average stat for 4D6d1:  {average_stat(roll_4d6d1, trials):.2f}")
+

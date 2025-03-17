@@ -36,15 +36,24 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Attended class Tuesday
 	+ Attended class Thursday
 	+ Asked a question on Discord
-	+ total 3 points
+	+ total 4 points
 - Week 4
 	+ Attended class Tuesday
 	+ Attended class Thursday
-	+ Assessed for Unit 0
+	+ Assessed for Unit 0 (Pass)
 	+ Total 3 points
 - Week 5
+	+ Attended class Tuesday
+	+ Attended class Thursday
+	+ Introduced to Helen
+	+ Assessed for Unit 1
+	+ Attended a Coderie 
 - Week 6
+	+ Assessed for Unit 1
 - Week 7
+	+ Assessed for Unit 2
 - Week 8
 - Week 9
 - Week 10
+	+ Assessed for Unit 3
+	+ Attended a Coderie

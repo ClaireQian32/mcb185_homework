@@ -1,11 +1,11 @@
 ##goes  from 51 to 1 by 2
 ##if prime fallow with *
 
-def unit2(n):
-	for n in range(51, 1, -2):
-		if n // n == 0 : print ('i*')
-		else :print(i)
-    	
+print (random.ranint(1, 1, -2))
 
-print (unit2(10))
+def count(n)
+	for i in range(1, n + 1):
+		print(i)
+    
+print(count(100000))
 
